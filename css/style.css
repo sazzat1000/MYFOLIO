@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+/* Common CSS Start ======================================= */
+.container {
+  width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section-intro {
+  text-align: center;
+}
+.section-intro h2 {
+  font-size: 46px;
+  font-weight: 800;
+  color: #02918c;
+  text-transform: uppercase;
+}
+.section-intro p {
+  font-size: 16px;
+  color: #7e8287;
+  line-height: 41px;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.btn {
+  display: inline-block;
+  background: #cfc91d;
+  padding: 14px 42px;
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #0b1016;
+  text-transform: uppercase;
+  font-weight: 800;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.btn:hover {
+  background: #02918c;
+  color: #fff;
+  cursor: pointer;
+}
+.up {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background: #02918C;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  transition: .5s;
+  z-index: 9999;
+}
+.up:hover {
+  background: #cfc91d;
+}
+.up:focus {
+  outline: 0;
+}
+/* Common CSS End ======================================= */
+
+/* Header Start ======================================= */
+#header {
+  background: #02918c;
+  z-index: 9999;
+}
+#header .logo {
+  width: 25%;
+}
+.logo img {
+  display: block;
+  padding: 17px 0 22px;
+}
+#header .menu {
+  width: 75%;
+}
+.menu ul {
+  float: right;
+}
+.menu ul li {
+  display: inline-block;
+}
+.menu ul li a {
+  display: block;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 0;
+  color: #fff;
+  padding: 27px 26px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.menu ul li:hover a {
+  color: #cfc91d;
+}
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+/* Header End ======================================= */
+
+/* Banner Start ======================================= */
+
+#banner {
+  background: url(../img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 195px 0;
+  position: relative;
+  z-index: 1;
+}
+#banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.banner-content {
+  text-align: center;
+  color: #fff;
+}
+.banner-content h4 {
+  font-size: 30px;
+  font-weight: 400;
+}
+.banner-content h1 {
+  font-size: 68px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 30px;
+}
+.banner-content p {
+  font-size: 18px;
+}
+.banner-content .image-wrapper {
+  margin: 50px 0;
+}
+/* Banner End ======================================= */
+
+/* About Start ======================================= */
+#about {
+  padding: 75px 0 95px;
+}
+#about .section-intro img {
+  margin: 10px 0 20px;
+}
+#about .section-intro p {
+  width: 881px;
+  margin: auto;
+}
+#about .section-intro p span {
+  font-size: 23px;
+  font-weight: 800;
+}
+#about .about-content {
+  margin-top: 80px;
+}
+#about .about-item {
+  width: 25%;
+  text-align: center;
+  padding: 35px 60px 45px;
+  border-right: 1px solid #d9dbdb;
+}
+#about .about-item:last-child {
+  border-right: none;
+}
+#about .about-item i {
+  font-size: 28px;
+  color: #02918c;
+}
+#about .about-item h3 {
+  font-size: 16px;
+  font-weight: 800;
+  color: #7e8287;
+  margin: 18px 0;
+}
+#about .about-item p {
+  font-size: 11px;
+  line-height: 21px;
+  color: #7e8287;
+}
+/* About End ======================================= */
+
+/* Service Start ======================================= */
+#service {
+  background: url(../img/services-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+#service .service-container {
+  width: 50%;
+  padding: 70px 0 35px;
+}
+#service .section-intro {
+  text-align: left;
+}
+#service .section-intro img {
+  margin: 30px 0 15px;
+}
+#service .service-content {
+  margin-top: 50px;
+}
+#service .service-item {
+  width: 50%;
+  padding-right: 100px;
+  margin-bottom: 45px;
+}
+#service .service-item h3 {
+  font-size: 16px;
+  font-weight: 800;
+  color: #7e8287;
+  margin: 5px 0 10px;
+}
+#service .service-item p {
+  font-size: 11px;
+  line-height: 21px;
+  color: #7e8287;
+  text-align: justify;
+}
+/* Service End ======================================= */
+
+/* My Work Start ======================================= */
+#work {
+  padding: 85px 0 90px;
+}
+#work .section-intro img {
+  margin: 13px 0 17px;
+}
+#work .section-intro p {
+  width: 685px;
+  margin: auto;
+}
+#work .work-container {
+  margin-top: 60px;
+}
+#work .work-item {
+  width: 25%;
+  position: relative;
+}
+#work .work-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#work .work-item .overlay {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  bottom: 20px;
+  left: 30px;
+  background: rgba(13, 133, 130, .85);
+  color: #fff;
+  padding: 50px 30px;
+  text-align: center;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform-origin: bottom right;
+}
+#work .work-item .overlay p {
+  font-size: 13px;
+  line-height: 21px;
+  margin-top: 13px;
+}
+#work .work-item:hover .overlay{
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+/* My Work End ======================================= */
+
+/* Contact Start ======================================= */
+#contact .section-intro p {
+  width: 685px;
+  margin: auto;
+}
+#contact .contact-form {
+  background: #0b0b0b;
+  padding: 10px 0 75px;
+  margin-top: 55px;
+}
+#contact .contact-form .input-element {
+  display: block;
+  margin: auto;
+  font-size: 16px;
+  color: #7e8287;
+  text-align: center;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #7e8287;
+  width: 639px;
+  padding: 15px 0;
+  margin-top: 50px;
+  font-family: "Open Sans", sans-serif;
+  
+}
+#contact .contact-form textarea.input-element {
+  width: 920px;
+  height: 60px;
+  resize: none;
+  margin-bottom: 60px;
+}
+#contact .contact-form .btn {
+  display: block;
+  padding: 12px 55px;
+  border: none;
+  color: #0b0b0b;
+  margin: auto;
+}
+#contact .contact-form .btn:hover {
+  color: #fff;
+}
+/* Contact End ======================================= */
+
+/* Footer Start ======================================= */
+#footer {
+  background: #000;
+  padding: 25px;
+  text-align: center;
+}
+#footer p {
+  font-size: 12px;
+  color: #7e8287;
+}
+/* Footer End ======================================= */
