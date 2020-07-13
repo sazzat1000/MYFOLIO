@@ -23,6 +23,11 @@ $(document).ready(function () {
         }
     });
 
+    // Slick Slider
+    $('#banner').slick({
+      prevArrow: "<i class='fas fa-arrow-left left'></i>",
+      nextArrow: "<i class='fas fa-arrow-right right'></i>",
+    });
 
 
 });

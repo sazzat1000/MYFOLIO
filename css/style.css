@@ -126,16 +126,29 @@ ul {
 /* Header End ======================================= */
 
 /* Banner Start ======================================= */
-
-#banner {
-  background: url(../img/banner.jpg);
-  background-size: cover;
-  background-position: center;
+/* #banner {
+  position: relative;
+} */
+#banner i {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 9999;
+  font-size: 30px;
+  color: gold;
+}
+#banner .right {
+  right: 0 !important;
+  top: 60%;
+}
+#banner .banner-item {
+  background-size: cover !important;
+  background-position: center !important;
   padding: 195px 0;
   position: relative;
   z-index: 1;
 }
-#banner::before {
+#banner .banner-item::before {
   content: "";
   position: absolute;
   top: 0;
@@ -164,6 +177,9 @@ ul {
 }
 .banner-content .image-wrapper {
   margin: 50px 0;
+}
+.slick-slide img {
+  display: inline-block;
 }
 /* Banner End ======================================= */
 
