@@ -25,6 +25,10 @@ $(document).ready(function () {
 
     // Slick Slider
     $('#banner').slick({
+      autoplay: true,
+      autoplaySpeed: 4000,
+      speed: 1000,
+      swipe: false,
       prevArrow: "<i class='fas fa-arrow-left arrow arrow-left'></i>",
       nextArrow: "<i class='fas fa-arrow-right arrow arrow-right'></i>",
     });
