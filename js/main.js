@@ -1,5 +1,10 @@
 $(document).ready(function () {
 
+  // Pre Loader
+  $(window).on('load', function () {
+    $('.loader').fadeOut(1000);
+ })
+
     // Back to Top Buttton
 
     $(window).scroll(function() {
