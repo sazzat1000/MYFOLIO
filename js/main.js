@@ -1,9 +1,9 @@
 $(document).ready(function () {
 
   // Pre Loader
-  $(window).on('load', function () {
-    $('.loader').fadeOut(1000);
- })
+  $(window).on("load", function () {
+    $("#preloader").fadeOut(1000);
+  })
 
     // Back to Top Buttton
 
@@ -37,6 +37,9 @@ $(document).ready(function () {
       prevArrow: "<i class='fas fa-arrow-left arrow arrow-left'></i>",
       nextArrow: "<i class='fas fa-arrow-right arrow arrow-right'></i>",
     });
+
+    // Wow js
+    new WOW().init();
 
 
 });

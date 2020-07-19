@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
+    <!-- Animates CSS -->
+    <link rel="stylesheet" href="css/animate.css">
     <!-- Slick Slider -->
     <link rel="stylesheet" href="css/slick.css">
     <!-- Main CSS -->
@@ -18,13 +20,8 @@
 
     <!-- Preloader Start ========================================= -->
 
-    <div class="loader">
-        <div class="load">
-            <hr>
-            <hr>
-            <hr>
-            <hr>
-        </div>
+    <div id="preloader">
+        <div id="loader"></div>
     </div>
 
     <!-- Preloader End ========================================= -->
@@ -56,7 +53,7 @@
     <section id="banner">
         <div class="banner-item" style="background: url(img/banner-1.jpg);">
             <div class="container">
-                <div class="banner-content">
+                <div class="banner-content wow fadeInUp" data-wow-duration="2s">
                     <h4>Lorem ipsum dolor sit iusmod tempor</h4>
                     <h1>incididunt bore</h1>
                     <p>Orem ipsum dolor sit amet, consectetur </p>
@@ -110,9 +107,9 @@
                 </p>
             </div>
             <div class="about-content">
-                <div class="row">
+                <div class="row wow">
                     <!-- 1st Item Start -->
-                    <div class="about-item">
+                    <div class="about-item wow fadeInUp" data-wow-delay=".4s">
                         <i class="far fa-lightbulb"></i>
                         <h3>Title goes here</h3>
                         <p>
@@ -122,7 +119,7 @@
                     </div>
                     <!-- 1st Item End -->
                     <!-- 2nd Item Start -->
-                    <div class="about-item">
+                    <div class="about-item wow fadeInUp" data-wow-delay=".8s">
                         <i class="fas fa-pencil-alt"></i>
                         <h3>Title goes here</h3>
                         <p>
@@ -132,7 +129,7 @@
                     </div>
                     <!-- 2nd Item End -->
                     <!-- 3rd Item Start -->
-                    <div class="about-item">
+                    <div class="about-item wow fadeInUp" data-wow-delay="1.2s">
                         <i class="fas fa-cog"></i>
                         <h3>Title goes here</h3>
                         <p>
@@ -142,7 +139,7 @@
                     </div>
                     <!-- 3rd Item End -->
                     <!-- 4th Item Start -->
-                    <div class="about-item">
+                    <div class="about-item wow fadeInUp" data-wow-delay="1.5s">
                         <i class="fas fa-laptop"></i>
                         <h3>Title goes here</h3>
                         <p>
@@ -239,8 +236,7 @@
         <!-- My Work Container Start ++++++++++++++++++++++++++ -->
         <div class="work-container">
             <div class="row">
-                <!-- 1st Item Start -->
-                <div class="work-item">
+                <div class="work-item wow fadeIn" data-wow-delay=".2s">
                     <img src="img/work1.jpg" alt="">
                     <div class="overlay">
                         <h3>Title goes here</h3>
@@ -250,9 +246,7 @@
                         </p>
                     </div>
                 </div>
-                <!-- 1st Item End -->
-                <!-- 2nd Item Start -->
-                <div class="work-item">
+                <div class="work-item wow fadeIn" data-wow-delay=".3s">
                     <img src="img/work2.jpg" alt="">
                     <div class="overlay">
                         <h3>Title goes here</h3>
@@ -262,9 +256,7 @@
                         </p>
                     </div>
                 </div>
-                <!-- 2nd Item End -->
-                <!-- 3rd Item Start -->
-                <div class="work-item">
+                <div class="work-item wow fadeIn" data-wow-delay=".4s">
                     <img src="img/work3.jpg" alt="">
                     <div class="overlay">
                         <h3>Title goes here</h3>
@@ -274,9 +266,7 @@
                         </p>
                     </div>
                 </div>
-                <!-- 3rd Item End -->
-                <!-- 4th Item Start -->
-                <div class="work-item">
+                <div class="work-item wow fadeIn" data-wow-delay=".5s">
                     <img src="img/work4.jpg" alt="">
                     <div class="overlay">
                         <h3>Title goes here</h3>
@@ -286,9 +276,7 @@
                         </p>
                     </div>
                 </div>
-                <!-- 4th Item End -->
-                <!-- 5th Item Start -->
-                <div class="work-item">
+                <div class="work-item wow fadeIn" data-wow-delay=".6s">
                     <img src="img/work5.jpg" alt="">
                     <div class="overlay">
                         <h3>Title goes here</h3>
@@ -298,9 +286,7 @@
                         </p>
                     </div>
                 </div>
-                <!-- 5th Item End -->
-                <!-- 6nd Item Start -->
-                <div class="work-item">
+                <div class="work-item wow fadeIn" data-wow-delay=".7s">
                     <img src="img/work6.jpg" alt="">
                     <div class="overlay">
                         <h3>Title goes here</h3>
@@ -310,9 +296,7 @@
                         </p>
                     </div>
                 </div>
-                <!-- 6nd Item End -->
-                <!-- 7th Item Start -->
-                <div class="work-item">
+                <div class="work-item wow fadeIn" data-wow-delay=".8s">
                     <img src="img/work7.jpg" alt="">
                     <div class="overlay">
                         <h3>Title goes here</h3>
@@ -322,9 +306,7 @@
                         </p>
                     </div>
                 </div>
-                <!-- 7th Item End -->
-                <!-- 8th Item Start -->
-                <div class="work-item">
+                <div class="work-item wow fadeIn" data-wow-delay="1s">
                     <img src="img/work8.jpg" alt="">
                     <div class="overlay">
                         <h3>Title goes here</h3>
@@ -334,7 +316,6 @@
                         </p>
                     </div>
                 </div>
-                <!-- 8th Item End -->
             </div>
         </div>
         <!-- My Work Container End ++++++++++++++++++++++++++ -->
@@ -384,6 +365,7 @@
     <!-- Script Files ========================================= -->
     <script src="js/jquery.js"></script>
     <script src="js/waypoints.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/main.js"></script>
 
