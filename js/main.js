@@ -1,5 +1,10 @@
 $(document).ready(function () {
 
+  // Smooth Scroll
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 1000
+  });
+
   // Pre Loader
   $(window).on("load", function () {
     $("#preloader").fadeOut(1000);

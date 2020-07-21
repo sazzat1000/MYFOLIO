@@ -326,7 +326,7 @@ ul {
 
 /* My Work Start ======================================= */
 #work {
-  padding: 85px 0 90px;
+  padding: 85px 0 0;
 }
 #work .section-intro img {
   margin: 13px 0 17px;
@@ -384,6 +384,9 @@ ul {
 /* My Work End ======================================= */
 
 /* Contact Start ======================================= */
+#contact {
+  padding: 90px 0 0;
+}
 #contact .section-intro p {
   width: 685px;
   margin: auto;
