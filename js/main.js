@@ -45,6 +45,10 @@ $(document).ready(function () {
 
     // Wow js
     new WOW().init();
-
+    
+    // Counter JS
+    $('.counter').counterUp({
+      time: 1000
+   });
 
 });
