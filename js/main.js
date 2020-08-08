@@ -5,10 +5,6 @@ $(document).ready(function () {
     speed: 1000
   });
 
-  // Pre Loader
-  $(window).on("load", function () {
-    $("#preloader").fadeOut(1000);
-  })
 
     // Back to Top Buttton
 

@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <!-- Animates CSS -->
     <link rel="stylesheet" href="css/animate.css">
     <!-- Slick Slider -->
@@ -18,73 +19,89 @@
 
 <body>
 
-    <!-- Preloader Start ========================================= -->
-    <div id="preloader">
-        <div id="loader"></div>
-    </div>
-    <!-- Preloader End ========================================= -->
 
     <!-- Header Start ========================================= -->
-    <header id="header">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <div class="row">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="img/logo.png" alt="Logo">
-                    </a>
-                </div>
-                <div class="menu">
-                    <ul>
-                        <li><a data-scroll href="#banner">Home</a></li>
-                        <li><a data-scroll href="#about">About Me</a></li>
-                        <li><a data-scroll href="#service">Services</a></li>
-                        <li><a data-scroll href="#work">My Work</a></li>
-                        <li><a data-scroll href="#contact">Contact Me</a></li>
-                    </ul>
-                </div>
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="MyFolio">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact me</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </header>
+    </nav>
     <!-- Header End ========================================= -->
 
     <!-- Banner Start ========================================= -->
     <section id="banner">
         <div class="banner-item" style="background: url(img/banner-1.jpg);">
             <div class="container">
-                <div class="banner-content wow fadeInUp" data-wow-duration="2s">
-                    <h4>Lorem ipsum dolor sit iusmod tempor</h4>
-                    <h1>incididunt bore</h1>
-                    <p>Orem ipsum dolor sit amet, consectetur </p>
-                    <div class="image-wrapper">
-                        <img src="img/bracket.png" alt="">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-11">
+                        <div class="banner-content wow fadeInUp" data-wow-duration="2s">
+                            <h4>Lorem ipsum dolor sit iusmod tempor</h4>
+                            <h1>incididunt bore</h1>
+                            <p>Orem ipsum dolor sit amet, consectetur </p>
+                            <div class="image-wrapper">
+                                <img src="img/bracket.png" alt="">
+                            </div>
+                            <a href="#" class="btn">Know More</a>
+                        </div>
                     </div>
-                    <a href="#" class="btn">Know More</a>
                 </div>
             </div>
         </div>
         <div class="banner-item" style="background: url(img/banner-2.jpg);">
             <div class="container">
-                <div class="banner-content">
-                    <h4>Lorem ipsum dolor sit iusmod tempor</h4>
-                    <h1>incididunt bore</h1>
-                    <p>Orem ipsum dolor sit amet, consectetur </p>
-                    <div class="image-wrapper">
-                        <img src="img/bracket.png" alt="">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-11">
+                        <div class="banner-content wow fadeInUp" data-wow-duration="2s">
+                            <h4>Lorem ipsum dolor sit iusmod tempor</h4>
+                            <h1>incididunt bore</h1>
+                            <p>Orem ipsum dolor sit amet, consectetur </p>
+                            <div class="image-wrapper">
+                                <img src="img/bracket.png" alt="">
+                            </div>
+                            <a href="#" class="btn">Know More</a>
+                        </div>
                     </div>
-                    <a href="#" class="btn">Know More</a>
                 </div>
             </div>
         </div>
         <div class="banner-item" style="background: url(img/banner-3.jpg);">
             <div class="container">
-                <div class="banner-content">
-                    <h4>Lorem ipsum dolor sit iusmod tempor</h4>
-                    <h1>incididunt bore</h1>
-                    <p>Orem ipsum dolor sit amet, consectetur </p>
-                    <div class="image-wrapper">
-                        <img src="img/bracket.png" alt="">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-11">
+                        <div class="banner-content wow fadeInUp" data-wow-duration="2s">
+                            <h4>Lorem ipsum dolor sit iusmod tempor</h4>
+                            <h1>incididunt bore</h1>
+                            <p>Orem ipsum dolor sit amet, consectetur </p>
+                            <div class="image-wrapper">
+                                <img src="img/bracket.png" alt="">
+                            </div>
+                            <a href="#" class="btn">Know More</a>
+                        </div>
                     </div>
-                    <a href="#" class="btn">Know More</a>
                 </div>
             </div>
         </div>
@@ -93,59 +110,65 @@
 
     <!-- About Start ========================================= -->
     <section id="about">
-        <div class="container">
-            <div class="section-intro">
-                <h2>About Me</h2>
-                <img src="img/underline-b.png" alt="">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <span class="bold">quis
-                        nostrud exercitation ullamco</span> laboris nisi ut aliquip ex ea commodo consequat duis aute
-                    irure dolor.
-                </p>
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="section-intro">
+                        <h2>About Me</h2>
+                        <img src="img/underline-b.png" alt="">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <span
+                                class="bold">quis
+                                nostrud exercitation ullamco</span> laboris nisi ut aliquip ex ea commodo consequat duis
+                            aute
+                            irure dolor.
+                        </p>
+                    </div>
+                </div>
             </div>
             <div class="about-content">
-                <div class="row wow">
-                    <!-- 1st Item Start -->
-                    <div class="about-item wow fadeInUp" data-wow-delay=".2s">
-                        <i class="far fa-lightbulb"></i>
-                        <h3>Title goes here</h3>
-                        <p>
-                            onsectetur adipisicing elit, sedo eiusmod tempor incidi
-                            et dolorerserss eerhfre mag.
-                        </p>
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="about-item wow fadeInUp" data-wow-delay=".1s">
+                            <i class="far fa-lightbulb"></i>
+                            <h3>Title goes here</h3>
+                            <p>
+                                onsectetur adipisicing elit, sedo eiusmod tempor incidi
+                                et dolorerserss eerhfre mag.
+                            </p>
+                        </div>
                     </div>
-                    <!-- 1st Item End -->
-                    <!-- 2nd Item Start -->
-                    <div class="about-item wow fadeInUp" data-wow-delay=".4s">
-                        <i class="fas fa-pencil-alt"></i>
-                        <h3>Title goes here</h3>
-                        <p>
-                            onsectetur adipisicing elit, sedo eiusmod tempor incidi
-                            et dolorerserss eerhfre mag.
-                        </p>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="about-item wow fadeInUp" data-wow-delay=".2s">
+                            <i class="fas fa-pencil-alt"></i>
+                            <h3>Title goes here</h3>
+                            <p>
+                                onsectetur adipisicing elit, sedo eiusmod tempor incidi
+                                et dolorerserss eerhfre mag.
+                            </p>
+                        </div>
                     </div>
-                    <!-- 2nd Item End -->
-                    <!-- 3rd Item Start -->
-                    <div class="about-item wow fadeInUp" data-wow-delay=".6s">
-                        <i class="fas fa-cog"></i>
-                        <h3>Title goes here</h3>
-                        <p>
-                            onsectetur adipisicing elit, sedo eiusmod tempor incidi
-                            et dolorerserss eerhfre mag.
-                        </p>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="about-item wow fadeInUp" data-wow-delay=".3s">
+                            <i class="fas fa-cog"></i>
+                            <h3>Title goes here</h3>
+                            <p>
+                                onsectetur adipisicing elit, sedo eiusmod tempor incidi
+                                et dolorerserss eerhfre mag.
+                            </p>
+                        </div>
                     </div>
-                    <!-- 3rd Item End -->
-                    <!-- 4th Item Start -->
-                    <div class="about-item wow fadeInUp" data-wow-delay=".8s">
-                        <i class="fas fa-laptop"></i>
-                        <h3>Title goes here</h3>
-                        <p>
-                            onsectetur adipisicing elit, sedo eiusmod tempor incidi
-                            et dolorerserss eerhfre mag.
-                        </p>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="about-item wow fadeInUp" data-wow-delay=".4s">
+                            <i class="fas fa-laptop"></i>
+                            <h3>Title goes here</h3>
+                            <p>
+                                onsectetur adipisicing elit, sedo eiusmod tempor incidi
+                                et dolorerserss eerhfre mag.
+                            </p>
+                        </div>
                     </div>
-                    <!-- 4th Item End -->
                 </div>
             </div>
         </div>
@@ -155,63 +178,65 @@
     <!-- Service Start ========================================= -->
     <section id="service">
         <div class="container">
-            <div class="service-container">
-                <!-- Section Intro Start -->
-                <div class="section-intro">
-                    <h2>Services</h2>
-                    <img src="img/underline-s.png" alt="">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-                </div>
-                <!-- Section Intro End -->
-                <!-- Service Content Start ++++++++++++++++++++ -->
-                <div class="service-content">
+            <div class="row">
+                <div class="col-md-6">
                     <div class="row">
-                        <!-- 1st Item Start -->
-                        <div class="service-item">
-                            <img src="img/icon5.png" alt="">
-                            <h3>Title goes here</h3>
-                            <p>
-                                Onsectetur adipisicing elit, sedo eiusmod tempor incidi
-                                et dolorerserss eerhfre mag.
-                            </p>
+                        <div class="col-12">
+                            <div class="section-intro">
+                                <h2>Services</h2>
+                                <img src="img/underline-s.png" alt="">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                    tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
                         </div>
-                        <!-- 1st Item End -->
-                        <!-- 2nd Item Start -->
-                        <div class="service-item">
-                            <img src="img/icon6.png" alt="">
-                            <h3>Title goes here</h3>
-                            <p>
-                                Onsectetur adipisicing elit, sedo eiusmod tempor incidi
-                                et dolorerserss eerhfre mag.
-                            </p>
+                    </div>
+                    <div class="service-content">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="service-item">
+                                    <img src="img/icon5.png" alt="">
+                                    <h3>Title goes here</h3>
+                                    <p>
+                                        Onsectetur adipisicing elit, sedo eiusmod tempor incidi
+                                        et dolorerserss eerhfre mag.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="service-item">
+                                    <img src="img/icon6.png" alt="">
+                                    <h3>Title goes here</h3>
+                                    <p>
+                                        Onsectetur adipisicing elit, sedo eiusmod tempor incidi
+                                        et dolorerserss eerhfre mag.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="service-item">
+                                    <img src="img/icon7.png" alt="">
+                                    <h3>Title goes here</h3>
+                                    <p>
+                                        Onsectetur adipisicing elit, sedo eiusmod tempor incidi
+                                        et dolorerserss eerhfre mag.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="service-item">
+                                    <img src="img/icon8.png" alt="">
+                                    <h3>Title goes here</h3>
+                                    <p>
+                                        Onsectetur adipisicing elit, sedo eiusmod tempor incidi
+                                        et dolorerserss eerhfre mag.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <!-- 2nd Item End -->
-                        <!-- 3rd Item Start -->
-                        <div class="service-item">
-                            <img src="img/icon7.png" alt="">
-                            <h3>Title goes here</h3>
-                            <p>
-                                Onsectetur adipisicing elit, sedo eiusmod tempor incidi
-                                et dolorerserss eerhfre mag.
-                            </p>
-                        </div>
-                        <!-- 3rd Item End -->
-                        <!-- 4th Item Start -->
-                        <div class="service-item">
-                            <img src="img/icon8.png" alt="">
-                            <h3>Title goes here</h3>
-                            <p>
-                                Onsectetur adipisicing elit, sedo eiusmod tempor incidi
-                                et dolorerserss eerhfre mag.
-                            </p>
-                        </div>
-                        <!-- 4th Item End -->
                     </div>
                 </div>
-                <!-- Service Content End +++++++++++++++++++ -->
             </div>
         </div>
     </section>
@@ -221,25 +246,33 @@
     <section id="counter">
         <div class="container">
             <div class="row">
-                <div class="counter-item wow fadeInLeft">
-                    <i class="fas fa-laptop"></i>
-                    <h2><span class="counter">800</span>+</h2>
-                    <h3>Website designed</h3>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="counter-item wow fadeInLeft">
+                        <i class="fas fa-laptop"></i>
+                        <h2><span class="counter">800</span>+</h2>
+                        <h3>Website designed</h3>
+                    </div>
                 </div>
-                <div class="counter-item">
-                    <i class="fas fa-code"></i>
-                    <h2 class="counter">500</h2>
-                    <h3>Website developed</h3>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="counter-item">
+                        <i class="fas fa-code"></i>
+                        <h2 class="counter">500</h2>
+                        <h3>Website developed</h3>
+                    </div>
                 </div>
-                <div class="counter-item">
-                    <i class="fas fa-trophy"></i>
-                    <h2 class="counter">245</h2>
-                    <h3>Trophy won</h3>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="counter-item">
+                        <i class="fas fa-trophy"></i>
+                        <h2 class="counter">245</h2>
+                        <h3>Trophy won</h3>
+                    </div>
                 </div>
-                <div class="counter-item wow fadeInRight">
-                    <i class="far fa-heart"></i>
-                    <h2><span class="counter">1</span>K+</h2>
-                    <h3>Happy client</h3>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="counter-item wow fadeInRight">
+                        <i class="far fa-heart"></i>
+                        <h2><span class="counter">1</span>K+</h2>
+                        <h3>Happy client</h3>
+                    </div>
                 </div>
             </div>
         </div>
@@ -249,98 +282,116 @@
     <!-- My Work Start ========================================= -->
     <section id="work">
         <div class="container">
-            <!-- Section Intro Start -->
-            <div class="section-intro">
-                <h2>My Work</h2>
-                <img src="img/underline-b.png" alt="">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua.
-                </p>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="section-intro">
+                        <h2>My Work</h2>
+                        <img src="img/underline-b.png" alt="">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <!-- Section Intro End -->
         </div>
         <!-- My Work Container Start ++++++++++++++++++++++++++ -->
-        <div class="work-container">
-            <div class="row">
-                <div class="work-item wow fadeIn" data-wow-delay=".2s">
-                    <img src="img/work1.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Title goes here</h3>
-                        <p>
-                            onsectetur adipisicing elit, sedo eiusmod tempor incidi
-                            et dolorerserss eerhfre mag.
-                        </p>
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="work-item wow fadeIn" data-wow-delay=".2s">
+                        <img src="img/work1.jpg" alt="Work 1" class="img-fluid">
+                        <div class="overlay">
+                            <h3>Title goes here</h3>
+                            <p>
+                                onsectetur adipisicing elit, sedo eiusmod tempor incidi
+                                et dolorerserss eerhfre mag.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="work-item wow fadeIn" data-wow-delay=".3s">
-                    <img src="img/work2.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Title goes here</h3>
-                        <p>
-                            onsectetur adipisicing elit, sedo eiusmod tempor incidi
-                            et dolorerserss eerhfre mag.
-                        </p>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="work-item wow fadeIn" data-wow-delay=".3s">
+                        <img src="img/work2.jpg" alt="Work 2" class="img-fluid">
+                        <div class="overlay">
+                            <h3>Title goes here</h3>
+                            <p>
+                                onsectetur adipisicing elit, sedo eiusmod tempor incidi
+                                et dolorerserss eerhfre mag.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="work-item wow fadeIn" data-wow-delay=".4s">
-                    <img src="img/work3.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Title goes here</h3>
-                        <p>
-                            onsectetur adipisicing elit, sedo eiusmod tempor incidi
-                            et dolorerserss eerhfre mag.
-                        </p>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="work-item wow fadeIn" data-wow-delay=".4s">
+                        <img src="img/work3.jpg" alt="Work 3" class="img-fluid">
+                        <div class="overlay">
+                            <h3>Title goes here</h3>
+                            <p>
+                                onsectetur adipisicing elit, sedo eiusmod tempor incidi
+                                et dolorerserss eerhfre mag.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="work-item wow fadeIn" data-wow-delay=".5s">
-                    <img src="img/work4.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Title goes here</h3>
-                        <p>
-                            onsectetur adipisicing elit, sedo eiusmod tempor incidi
-                            et dolorerserss eerhfre mag.
-                        </p>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="work-item wow fadeIn" data-wow-delay=".5s">
+                        <img src="img/work4.jpg" alt="Work 4" class="img-fluid">
+                        <div class="overlay">
+                            <h3>Title goes here</h3>
+                            <p>
+                                onsectetur adipisicing elit, sedo eiusmod tempor incidi
+                                et dolorerserss eerhfre mag.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="work-item wow fadeIn" data-wow-delay=".6s">
-                    <img src="img/work5.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Title goes here</h3>
-                        <p>
-                            onsectetur adipisicing elit, sedo eiusmod tempor incidi
-                            et dolorerserss eerhfre mag.
-                        </p>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="work-item wow fadeIn" data-wow-delay=".6s">
+                        <img src="img/work5.jpg" alt="Work 5" class="img-fluid">
+                        <div class="overlay">
+                            <h3>Title goes here</h3>
+                            <p>
+                                onsectetur adipisicing elit, sedo eiusmod tempor incidi
+                                et dolorerserss eerhfre mag.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="work-item wow fadeIn" data-wow-delay=".7s">
-                    <img src="img/work6.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Title goes here</h3>
-                        <p>
-                            onsectetur adipisicing elit, sedo eiusmod tempor incidi
-                            et dolorerserss eerhfre mag.
-                        </p>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="work-item wow fadeIn" data-wow-delay=".7s">
+                        <img src="img/work6.jpg" alt="Work 6" class="img-fluid">
+                        <div class="overlay">
+                            <h3>Title goes here</h3>
+                            <p>
+                                onsectetur adipisicing elit, sedo eiusmod tempor incidi
+                                et dolorerserss eerhfre mag.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="work-item wow fadeIn" data-wow-delay=".8s">
-                    <img src="img/work7.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Title goes here</h3>
-                        <p>
-                            onsectetur adipisicing elit, sedo eiusmod tempor incidi
-                            et dolorerserss eerhfre mag.
-                        </p>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="work-item wow fadeIn" data-wow-delay=".8s">
+                        <img src="img/work7.jpg" alt="Work 7" class="img-fluid">
+                        <div class="overlay">
+                            <h3>Title goes here</h3>
+                            <p>
+                                onsectetur adipisicing elit, sedo eiusmod tempor incidi
+                                et dolorerserss eerhfre mag.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="work-item wow fadeIn" data-wow-delay="1s">
-                    <img src="img/work8.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Title goes here</h3>
-                        <p>
-                            onsectetur adipisicing elit, sedo eiusmod tempor incidi
-                            et dolorerserss eerhfre mag.
-                        </p>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="work-item wow fadeIn" data-wow-delay="1s">
+                        <img src="img/work8.jpg" alt="Work 8" class="img-fluid">
+                        <div class="overlay">
+                            <h3>Title goes here</h3>
+                            <p>
+                                onsectetur adipisicing elit, sedo eiusmod tempor incidi
+                                et dolorerserss eerhfre mag.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -391,6 +442,7 @@
 
     <!-- Script Files ========================================= -->
     <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="js/waypoints.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/slick.js"></script>
