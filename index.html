@@ -7,18 +7,18 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
-    <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <!-- Animates CSS -->
     <link rel="stylesheet" href="css/animate.css">
     <!-- Slick Slider -->
     <link rel="stylesheet" href="css/slick.css">
     <!-- Main CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
-
 
     <!-- Header Start ========================================= -->
     <nav class="navbar navbar-expand-lg">
@@ -160,7 +160,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-3">
-                        <div class="about-item wow fadeInUp" data-wow-delay=".4s">
+                        <div class="about-item last-about-item wow fadeInUp" data-wow-delay=".4s">
                             <i class="fas fa-laptop"></i>
                             <h3>Title goes here</h3>
                             <p>
@@ -179,7 +179,7 @@
     <section id="service">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-9 col-lg-6">
                     <div class="row">
                         <div class="col-12">
                             <div class="section-intro">
@@ -298,7 +298,7 @@
         <!-- My Work Container Start ++++++++++++++++++++++++++ -->
         <div class="container-fluid">
             <div class="row no-gutters">
-                <div class="col-sm-6 col-lg-3">
+                <div class="col-sm-4 col-lg-3">
                     <div class="work-item wow fadeIn" data-wow-delay=".2s">
                         <img src="img/work1.jpg" alt="Work 1" class="img-fluid">
                         <div class="overlay">
@@ -310,7 +310,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
+                <div class="col-sm-4 col-lg-3">
                     <div class="work-item wow fadeIn" data-wow-delay=".3s">
                         <img src="img/work2.jpg" alt="Work 2" class="img-fluid">
                         <div class="overlay">
@@ -322,7 +322,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
+                <div class="col-sm-4 col-lg-3">
                     <div class="work-item wow fadeIn" data-wow-delay=".4s">
                         <img src="img/work3.jpg" alt="Work 3" class="img-fluid">
                         <div class="overlay">
@@ -334,7 +334,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
+                <div class="col-sm-4 col-lg-3">
                     <div class="work-item wow fadeIn" data-wow-delay=".5s">
                         <img src="img/work4.jpg" alt="Work 4" class="img-fluid">
                         <div class="overlay">
@@ -346,7 +346,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
+                <div class="col-sm-4 col-lg-3">
                     <div class="work-item wow fadeIn" data-wow-delay=".6s">
                         <img src="img/work5.jpg" alt="Work 5" class="img-fluid">
                         <div class="overlay">
@@ -358,7 +358,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
+                <div class="col-sm-4 col-lg-3">
                     <div class="work-item wow fadeIn" data-wow-delay=".7s">
                         <img src="img/work6.jpg" alt="Work 6" class="img-fluid">
                         <div class="overlay">
@@ -370,7 +370,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
+                <div class="col-sm-4 col-lg-3">
                     <div class="work-item wow fadeIn" data-wow-delay=".8s">
                         <img src="img/work7.jpg" alt="Work 7" class="img-fluid">
                         <div class="overlay">
@@ -382,7 +382,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-3">
+                <div class="col-sm-4 col-lg-3">
                     <div class="work-item wow fadeIn" data-wow-delay="1s">
                         <img src="img/work8.jpg" alt="Work 8" class="img-fluid">
                         <div class="overlay">
@@ -403,26 +403,48 @@
     <!-- Contact Start ========================================= -->
     <section id="contact">
         <div class="container">
-            <!-- Section Intro Start -->
-            <div class="section-intro">
-                <h2>Contact Me</h2>
-                <img src="img/underline-b.png" alt="">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua.
-                </p>
+            <div class="row justify-content-center">
+                <div class="col-md-9">
+                    <div class="section-intro">
+                        <h2>Contact Me</h2>
+                        <img src="img/underline-b.png" alt="">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <!-- Section Intro End -->
         </div>
         <div class="contact-form">
-            <div class="container">
-                <form action="#">
-                    <input type="text" placeholder="NAME" class="input-element">
-                    <input type="emai" placeholder="EMAIL" class="input-element">
-                    <textarea placeholder="MESSAGE" class="input-element"></textarea>
-                    <input type="submit" value="SUBMIT" class="btn">
-                </form>
+           <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <form action="#">
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <input type="text" placeholder="NAME" class="input-element">
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <input type="email" placeholder="EMAIL" class="input-element">
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-11">
+                                <textarea placeholder="MESSAGE" class="input-element"></textarea>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <input type="submit" value="SUBMIT" class="btn">
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
+           </div>
         </div>
     </section>
     <!-- Contact End ========================================= -->

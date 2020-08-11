@@ -76,11 +76,16 @@ ul {
 .up:hover {
   background: #cfc91d;
 }
-
-.up:focus {
-  outline: 0;
+button:focus,
+.up:focus,
+input:focus,
+.btn:focus,
+a:focus {
+  outline: none;
 }
-
+.navbar-toggler i {
+  color: #fff;
+}
 /* Common CSS End ======================================= */
 
 /* Nav Start ======================================= */
@@ -213,11 +218,14 @@ nav {
   margin-top: 80px;
 }
 
-.about-content .about-item {
+.about-content .col-sm-6 {
   padding: 35px 30px 45px;
-  border-right: 2px solid red;
+  border-right: 2px solid #d9dbdb;
+  margin-bottom: 15px;
 }
-
+.about-content .col-sm-6:last-child{
+  border-right: none;
+}
 .about-content .about-item i {
   font-size: 28px;
   color: #02918c;
@@ -263,15 +271,17 @@ nav {
   padding: 0 50px 30px 0;
 }
 
-.service-item img{
+.service-item img {
   margin-bottom: 10px;
 }
+
 .service-item h3 {
   font-size: 16px;
   font-weight: 800;
   color: #7e8287;
   margin: 5px 0 10px;
 }
+
 .service-item p {
   font-size: 11px;
   line-height: 21px;
@@ -285,13 +295,21 @@ nav {
 #counter {
   padding: 90px 0 50px;
 }
+
 #counter .counter-item {
   text-align: center;
   padding: 40px 20px;
   border-radius: 5px;
-  box-shadow: 0px 5px 10px 3px #7e82876c
+  box-shadow: 0px 5px 10px 3px #7e82876c;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
 }
-
+#counter .counter-item:hover {
+  box-shadow: none;
+}
 .counter-item i {
   font-size: 30px;
   color: #02918c;
@@ -310,9 +328,11 @@ nav {
   margin-bottom: 10px;
   font-weight: 800;
 }
+
 .counter-item .counter {
   font-size: 42px;
 }
+
 .counter-item h3 {
   font-size: 20px;
   color: #7e8287;
@@ -326,26 +346,23 @@ nav {
 #work {
   padding: 85px 0 0;
 }
-/* #work .container-fluid {
+
+#work .section-intro {
+  margin-bottom: 75px;
+}
+
+#work .container-fluid {
   padding: 0;
-} */
-/* #work .section-intro img {
+}
+
+#work .section-intro img {
   margin: 13px 0 17px;
-} */
-
-#work .section-intro p {
-  width: 685px;
-  margin: auto;
 }
 
-#work .work-container {
-  margin-top: 60px;
-}
-#work .work-item img{
+#work .work-item img {
   width: 100%;
-  margin-bottom: 0;
-  /* display: block */
 }
+
 #work .work-item .overlay {
   position: absolute;
   top: 20px;
@@ -366,10 +383,13 @@ nav {
   -moz-transform: scale(0);
   -ms-transform: scale(0);
   -o-transform: scale(0);
-  transform-origin: bottom right;
+  transform-origin: center;
 }
 
-#work .work-item .overlay p {
+.work-item .overlay h3 {
+  font-size: 27px;
+}
+.work-item .overlay p {
   font-size: 13px;
   line-height: 21px;
   margin-top: 13px;
@@ -390,11 +410,6 @@ nav {
   padding: 90px 0 0;
 }
 
-#contact .section-intro p {
-  width: 685px;
-  margin: auto;
-}
-
 #contact .contact-form {
   background: #0b0b0b;
   padding: 10px 0 75px;
@@ -402,27 +417,26 @@ nav {
 }
 
 #contact .contact-form .input-element {
-  display: block;
-  margin: auto;
+  width: 100%;
   font-size: 16px;
   color: #7e8287;
   text-align: center;
   background: none;
   border: none;
   border-bottom: 1px solid #7e8287;
-  width: 639px;
   padding: 15px 0;
   margin-top: 50px;
   font-family: "Open Sans", sans-serif;
 }
 
 #contact .contact-form textarea.input-element {
-  width: 920px;
   height: 60px;
   resize: none;
   margin-bottom: 60px;
 }
-
+.input-element:focus {
+  outline: none;
+}
 #contact .contact-form .btn {
   display: block;
   padding: 12px 55px;
