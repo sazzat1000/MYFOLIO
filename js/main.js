@@ -1,9 +1,9 @@
 $(document).ready(function () {
 
   // Smooth Scroll
-  var scroll = new SmoothScroll('a[href*="#"]', {
-    speed: 1000
-  });
+  // var scroll = new SmoothScroll('a[href*="#"]', {
+  //   speed: 1000
+  // });
 
 
     // Back to Top Buttton
